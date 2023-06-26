@@ -15,7 +15,7 @@ const bakerSchema = new Schema({
         required: true
     },
     bio: String
-}, {toJSON: {virtuals: turn} })
+}, {toJSON: {virtuals: true} })
 
 //hooks
 bakerSchema.post('findOneAndDelete', function() {
